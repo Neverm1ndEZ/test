@@ -1,0 +1,59 @@
+<!-- // User can add a contact with name and mobile number(Duplicate mobile number not allowed)
+// b.	Can view list of all contacts in ascending order of name.
+//        •	Can filter records with name.
+//        •	Can filter records with mobile number.
+//        •	Filtering should be phrase search, Ex Deepak can be search by typing only De or Dep).
+// c.	Can edit a contact.
+// d.	Can delete a contact. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Manager</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="details">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name" />
+
+                <label for="contact">Contact</label>
+                <input type="number" id="contact" placeholder="Enter Contact Number" />
+            </form>
+            <div class="input-btn">
+                <button type="submit" id="add-btn"> Add Contact </button>
+                <button type="button" id="cancel-btn"> Cancel </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="record-display">
+        <h2>Available Contacts: </h2>
+        <div class="record-container">
+            <div class="record-item">
+                <!-- <div class="record-el">
+                    <span id="labelling">Contact ID: </span>
+                    <span id="contact-id-content">1</span>
+                </div>
+                <div class="record-el">
+                    <span id="labelling">Name: </span>
+                    <span id="name-content">John Doe</span>
+                </div>
+                <div class="record-el">
+                    <span id="labelling">Contact Number: </span>
+                    <span id="contact-num-content">123-456-7890</span>
+                </div>
+                <button type="button" id="delete-btn"> Delete </button>
+                <button type="button" id="edit-btn"> Edit </button> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
